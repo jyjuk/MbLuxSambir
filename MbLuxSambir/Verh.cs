@@ -9,7 +9,7 @@ namespace MbLuxSambir
     public class Verh
     {
         public double V15(int k)
-        {
+        { 
             return 2 * k;
         }
         public double V30(int k)

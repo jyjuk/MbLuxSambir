@@ -64,6 +64,7 @@
     <Compile Include="FurnituraPlus.cs" />
     <Compile Include="GetPrice.cs" />
     <Compile Include="Nuz.cs" />
+    <Compile Include="Tumba.cs" />
     <Compile Include="Verh.cs" />
     <Page Include="Configurator.xaml">
       <SubType>Designer</SubType>
