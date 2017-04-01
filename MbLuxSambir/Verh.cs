@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,7 +17,7 @@ namespace MbLuxSambir
         }
         public double V40(int k)
         {
-            return k;           
+            return k;
         }
         public double V45(int k)
         {

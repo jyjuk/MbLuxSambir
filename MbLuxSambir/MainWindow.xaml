@@ -26,32 +26,31 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
+        <ListView Grid.Row="1" DataContext="{Binding .}"  ItemsSource="{Binding Path=TumbochkaNyzes}" Grid.RowSpan="11" Grid.Column="0">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <local:MainUC></local:MainUC>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <ListView Grid.Row="1" DataContext="{Binding .}"  ItemsSource="{Binding Path=TumbochkaVerkhs}" Grid.RowSpan="11" Grid.Column="1">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <local:MainUC></local:MainUC>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <ListView Grid.Row="1" DataContext="{Binding .}"  ItemsSource="{Binding Path=Tumbochkas}" Grid.RowSpan="11" Grid.Column="2">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <local:MainUC></local:MainUC>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
         <Label Name="Title1" Content="Верхні ящики" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Row="0" Grid.Column="0"/>
         <Label Name="Title2" Content="Нижні ящики" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Column="1"/>
         <Label Name="Title3" Content="Furnitura+" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Column="2"/>
-
-        <local:MainUC x:Name="VKut"  VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="1" Grid.Column="0"  />
-        <local:MainUC x:Name="V15" HorizontalAlignment="Center"  VerticalAlignment="Center" Grid.Row="2" Grid.Column="0" />
-        <local:MainUC x:Name="V30" HorizontalAlignment="Center"  VerticalAlignment="Top" Grid.Row="3" Grid.Column="0"/>
-        <local:MainUC x:Name="V40" HorizontalAlignment="Center"  VerticalAlignment="Top" Grid.Row="4" Grid.Column="0"/>
-        <local:MainUC x:Name="V45" HorizontalAlignment="Center"  VerticalAlignment="Top" Grid.Row="5" Grid.Column="0"/>
-        <local:MainUC x:Name="V60" HorizontalAlignment="Center"  VerticalAlignment="Top" Grid.Row="6" Grid.Column="0"/>
-        <local:MainUC x:Name="VVut" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Row="7" Grid.Column="0"/>
-
-        <local:MainUC x:Name="NKut" HorizontalAlignment="Center"  VerticalAlignment="Top" Grid.Row="1" Grid.Column="1"/>
-        <local:MainUC x:Name="N15" HorizontalAlignment="Center"  VerticalAlignment="Top" Grid.Row="2" Grid.Column="1"/>
-        <local:MainUC x:Name="N30" HorizontalAlignment="Center"  VerticalAlignment="Top" Grid.Row="3" Grid.Column="1"/>
-        <local:MainUC x:Name="N40" HorizontalAlignment="Center"  VerticalAlignment="Top" Grid.Row="4" Grid.Column="1"/>
-        <local:MainUC x:Name="N45" HorizontalAlignment="Center"  VerticalAlignment="Top" Grid.Row="5" Grid.Column="1"/>
-        <local:MainUC x:Name="N60" HorizontalAlignment="Center"  VerticalAlignment="Top" Grid.Row="6" Grid.Column="1"/>
-        <local:MainUC x:Name="NPlyta" HorizontalAlignment="Center"  VerticalAlignment="Top" Grid.Row="7" Grid.Column="1"/>
-        <local:MainUC x:Name="NKargo" HorizontalAlignment="Center"  VerticalAlignment="Top" Grid.Row="8" Grid.Column="1"/>
-        <local:MainUC x:Name="NSushka" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Row="9" Grid.Column="1"/>
-        <local:MainUC x:Name="NShuflada" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Row="10" Grid.Column="1"/>
-
-        <local:MainUC x:Name="FpLift" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Row="1" Grid.Column="2"/>
-        <local:MainUC x:Name="FpR2" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Row="2" Grid.Column="2"/>
-        <local:MainUC x:Name="FpDot" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Row="3" Grid.Column="2"/>
 
         <Button Name="btnConfigurator" Content="Configurator" Width="90" Height="30" Grid.Column="0" Grid.Row="11" Click="btnConfigurator_Click"/>
         <Button Name="btnFactura" Content="Factura" Width="90" Height="30" Grid.Column="1" Grid.Row="11" Click="btnFactura_Click"/>

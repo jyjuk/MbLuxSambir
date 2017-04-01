@@ -55,6 +55,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="BusinessLogic\PriceInfo.cs" />
+    <Compile Include="Models\Component.cs" />
     <Compile Include="Configurator.xaml.cs">
       <DependentUpon>Configurator.xaml</DependentUpon>
     </Compile>
@@ -64,8 +66,12 @@
     <Compile Include="FurnituraPlus.cs" />
     <Compile Include="GetPrice.cs" />
     <Compile Include="Nuz.cs" />
+    <Compile Include="Models\Tumbochka.cs" />
+    <Compile Include="Models\TumbochkaNyz.cs" />
+    <Compile Include="Models\TumbochkaVerh.cs" />
     <Compile Include="Tumba.cs" />
     <Compile Include="Verh.cs" />
+    <Compile Include="ViewModels\MainViewModel.cs" />
     <Page Include="Configurator.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

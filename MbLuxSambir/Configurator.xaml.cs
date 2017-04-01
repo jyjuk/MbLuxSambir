@@ -94,7 +94,6 @@ namespace MbLuxSambir
             mw.Show();
         }
 
-
         private void btnSave_Click(object sender, RoutedEventArgs e)
         {
             Properties.Settings.Default.PriceCargo = Double.Parse(PriceCargo.textbox.Text.Replace('.', ','));
