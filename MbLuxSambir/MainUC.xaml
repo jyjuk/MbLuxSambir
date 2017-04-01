@@ -7,10 +7,9 @@
              mc:Ignorable="d" 
              d:DesignHeight="50" d:DesignWidth="220"  >
     <Grid Margin="10,2" >
-        <CheckBox x:Name="checkBox" Content="*" Margin="1" HorizontalAlignment="Left" VerticalAlignment="Center" Checked="checkBox_Checked" Unchecked="checkBox_Unchecked"/>
-        <Label x:Name="label" Width="128" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  HorizontalAlignment="Center"  VerticalAlignment="Center" Margin="24,10,48,10" Height="26"  />
-        <TextBox x:Name="textBox" HorizontalAlignment="Right" IsEnabled="False" Height="25" Margin="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
-                  TextWrapping="Wrap"  VerticalAlignment="Center" Width="45" TextChanged="textBox_TextChanged"/>
-
+        <CheckBox x:Name="checkBox" Content="*" Margin="1" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Label x:Name="label" Content="{Binding Path=Name}" Width="128" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  HorizontalAlignment="Center"  VerticalAlignment="Center" Margin="24,10,48,10" Height="26"  />
+        <TextBox x:Name="textBox" Text="{Binding Path=Count, Mode=OneWay}" HorizontalAlignment="Right" IsEnabled="{Binding ElementName=checkBox, Path=IsChecked}" Height="25" Margin="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+                    VerticalAlignment="Center" Width="45" TextChanged="textBox_TextChanged"/>
     </Grid>
 </UserControl>
