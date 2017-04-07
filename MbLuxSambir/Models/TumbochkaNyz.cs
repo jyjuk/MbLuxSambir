@@ -9,16 +9,16 @@ namespace MbLuxSambir.Models
             Name = name;
             Components = new List<Component>
             {
-                new Component("Pluta", 0.5f),
-                new Component("Confrimator", 12),
+                new Component("Плита", 0.5f),
+                new Component("Конфірмат", 12),
                 new Component("DVP", 0.2f),
-                new Component("Petli", 2),
-                new Component("Rychka", 1),
-                new Component("Stilnycya", 1),
-                new Component("Noga", 4),
+                new Component("Петла", 2),
+                new Component("Ручка", 1),
+                new Component("Стільниця", 1),
+                new Component("Нога кухонна", 4),
                 new Component("PCV", 2),
-                new Component("bolts", 20),
-                new Component("Doors", 1)
+                new Component("Шурупи", 20),
+                new Component("Фасад", 1)
             };
         }
 

@@ -63,14 +63,12 @@
     <Compile Include="ConfiguratorUC.xaml.cs">
       <DependentUpon>ConfiguratorUC.xaml</DependentUpon>
     </Compile>
-    <Compile Include="FurnituraPlus.cs" />
     <Compile Include="GetPrice.cs" />
-    <Compile Include="Nuz.cs" />
+    <Compile Include="Models\FurnituraPlus.cs" />
     <Compile Include="Models\Tumbochka.cs" />
     <Compile Include="Models\TumbochkaNyz.cs" />
     <Compile Include="Models\TumbochkaVerh.cs" />
     <Compile Include="Tumba.cs" />
-    <Compile Include="Verh.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Page Include="Configurator.xaml">
       <SubType>Designer</SubType>

@@ -8,5 +8,7 @@ namespace MbLuxSambir.ViewModels
         public ObservableCollection<TumbochkaNyz> TumbochkaNyzes { get; set; }
         public ObservableCollection<TumbochkaVerh> TumbochkaVerkhs { get; set; }
         public ObservableCollection<Tumbochka> Tumbochkas { get; set; }
+
+        public ObservableCollection<FurnituraPlus> Furnitura { get; set; }
     }
 }

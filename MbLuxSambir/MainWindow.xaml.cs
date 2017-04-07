@@ -26,7 +26,7 @@ namespace MbLuxSambir
         TumbochkaVerh verkh;
         TumbochkaNyz nyz;
 
-        FurnituraPlus fp = new FurnituraPlus();
+        FurnituraPlus fp ;
 
         public MainWindow()
         {
@@ -36,68 +36,60 @@ namespace MbLuxSambir
 
             mainViewModel.TumbochkaNyzes = new ObservableCollection<TumbochkaNyz>();
             mainViewModel.TumbochkaNyzes.Add(new TumbochkaNyz("Кутова"));
-            mainViewModel.TumbochkaNyzes.Add(new TumbochkaNyz("Кутова15"));
-            mainViewModel.TumbochkaNyzes.Add(new TumbochkaNyz("Кутова25"));
-            mainViewModel.TumbochkaNyzes.Add(new TumbochkaNyz("Кутова35"));
+            mainViewModel.TumbochkaNyzes.Add(new TumbochkaNyz("Плита"));
+            mainViewModel.TumbochkaNyzes.Add(new TumbochkaNyz("Шуфляди"));
+            mainViewModel.TumbochkaNyzes.Add(new TumbochkaNyz("нижній 150"));
+            mainViewModel.TumbochkaNyzes.Add(new TumbochkaNyz("нижній 200"));
+            mainViewModel.TumbochkaNyzes.Add(new TumbochkaNyz("нижній 250"));
+            mainViewModel.TumbochkaNyzes.Add(new TumbochkaNyz("нижній 300"));
+            mainViewModel.TumbochkaNyzes.Add(new TumbochkaNyz("нижній 350"));
+            mainViewModel.TumbochkaNyzes.Add(new TumbochkaNyz("нижній 400"));
+            mainViewModel.TumbochkaNyzes.Add(new TumbochkaNyz("нижній 450"));
+            mainViewModel.TumbochkaNyzes.Add(new TumbochkaNyz("нижній 500"));
+            mainViewModel.TumbochkaNyzes.Add(new TumbochkaNyz("нижній 550"));
+            mainViewModel.TumbochkaNyzes.Add(new TumbochkaNyz("нижній 600"));
+            mainViewModel.TumbochkaNyzes.Add(new TumbochkaNyz("нижній 650"));
+            mainViewModel.TumbochkaNyzes.Add(new TumbochkaNyz("нижній 700"));
+            mainViewModel.TumbochkaNyzes.Add(new TumbochkaNyz("нижній 750"));
+            mainViewModel.TumbochkaNyzes.Add(new TumbochkaNyz("нижній 800"));
+            mainViewModel.TumbochkaNyzes.Add(new TumbochkaNyz("нижній 850"));
+            mainViewModel.TumbochkaNyzes.Add(new TumbochkaNyz("нижній 900"));
+            mainViewModel.TumbochkaNyzes.Add(new TumbochkaNyz("нижній 950"));
+            mainViewModel.TumbochkaNyzes.Add(new TumbochkaNyz("нижній 1000"));
 
 
             mainViewModel.TumbochkaVerkhs = new ObservableCollection<TumbochkaVerh>();
-            mainViewModel.TumbochkaVerkhs.Add(new TumbochkaVerh("-=Кутова"));
-            mainViewModel.TumbochkaVerkhs.Add(new TumbochkaVerh("-=Кутова15"));
-            mainViewModel.TumbochkaVerkhs.Add(new TumbochkaVerh("-=Кутова25"));
-            mainViewModel.TumbochkaVerkhs.Add(new TumbochkaVerh("-=Кутова35")); mainViewModel.TumbochkaVerkhs.Add(new TumbochkaVerh("-=Кутова"));
-            mainViewModel.TumbochkaVerkhs.Add(new TumbochkaVerh("-=Кутова15"));
-            mainViewModel.TumbochkaVerkhs.Add(new TumbochkaVerh("-=Кутова25"));
-            mainViewModel.TumbochkaVerkhs.Add(new TumbochkaVerh("-=Кутова35")); mainViewModel.TumbochkaVerkhs.Add(new TumbochkaVerh("-=Кутова"));
-            mainViewModel.TumbochkaVerkhs.Add(new TumbochkaVerh("-=Кутова15"));
-            mainViewModel.TumbochkaVerkhs.Add(new TumbochkaVerh("-=Кутова25"));
-            mainViewModel.TumbochkaVerkhs.Add(new TumbochkaVerh("-=Кутова35")); mainViewModel.TumbochkaVerkhs.Add(new TumbochkaVerh("-=Кутова"));
-            mainViewModel.TumbochkaVerkhs.Add(new TumbochkaVerh("-=Кутова15"));
-            mainViewModel.TumbochkaVerkhs.Add(new TumbochkaVerh("-=Кутова25"));
-            mainViewModel.TumbochkaVerkhs.Add(new TumbochkaVerh("-=Кутова35")); mainViewModel.TumbochkaVerkhs.Add(new TumbochkaVerh("-=Кутова"));
-            mainViewModel.TumbochkaVerkhs.Add(new TumbochkaVerh("-=Кутова15"));
-            mainViewModel.TumbochkaVerkhs.Add(new TumbochkaVerh("-=Кутова25"));
-            mainViewModel.TumbochkaVerkhs.Add(new TumbochkaVerh("-=Кутова35"));
+            mainViewModel.TumbochkaVerkhs.Add(new TumbochkaVerh("Кутова"));
+            mainViewModel.TumbochkaVerkhs.Add(new TumbochkaVerh("Верхній 150"));
+            mainViewModel.TumbochkaVerkhs.Add(new TumbochkaVerh("Верхній 200"));
+            mainViewModel.TumbochkaVerkhs.Add(new TumbochkaVerh("Верхній 250"));
+            mainViewModel.TumbochkaVerkhs.Add(new TumbochkaVerh("Верхній 300"));
+            mainViewModel.TumbochkaVerkhs.Add(new TumbochkaVerh("Верхній 350"));
+            mainViewModel.TumbochkaVerkhs.Add(new TumbochkaVerh("Верхній 400"));
+            mainViewModel.TumbochkaVerkhs.Add(new TumbochkaVerh("Верхній 450"));
+            mainViewModel.TumbochkaVerkhs.Add(new TumbochkaVerh("Верхній 500"));
+            mainViewModel.TumbochkaVerkhs.Add(new TumbochkaVerh("Верхній 550"));
+            mainViewModel.TumbochkaVerkhs.Add(new TumbochkaVerh("Верхній 600"));
+            mainViewModel.TumbochkaVerkhs.Add(new TumbochkaVerh("Верхній 650"));
+            mainViewModel.TumbochkaVerkhs.Add(new TumbochkaVerh("Верхній 700"));
+            mainViewModel.TumbochkaVerkhs.Add(new TumbochkaVerh("Верхній 750"));
+            mainViewModel.TumbochkaVerkhs.Add(new TumbochkaVerh("Верхній 800"));
+            mainViewModel.TumbochkaVerkhs.Add(new TumbochkaVerh("Верхній 850"));
+            mainViewModel.TumbochkaVerkhs.Add(new TumbochkaVerh("Верхній 900"));
+
+
+            mainViewModel.Furnitura = new ObservableCollection<FurnituraPlus>();
+            mainViewModel.Furnitura.Add(new FurnituraPlus("Cargo"));
+            mainViewModel.Furnitura.Add(new FurnituraPlus("Сушка"));
+            mainViewModel.Furnitura.Add(new FurnituraPlus("Вмонтована Витяжка"));
 
             DataContext = mainViewModel;
 
-            SetLabelCol1();
-            SetLabelCol2();
-            SetLabelCol3();
 
         }
 
-        private void SetLabelCol1()
-        {
-            //VKut.label.Content = "Верхній кутовий";
-            //V15.label.Content = "Верхній 15";
-            //V30.label.Content = "Верхній 30";
-            //V40.label.Content = "Верхній 40";
-            //V45.label.Content = "Верхній 45";
-            //V60.label.Content = "Верхній 60";
-            //VVut.label.Content = "Верхній Витяжка";
-        }
+       
 
-        private void SetLabelCol2()
-        {
-            //NKut.label.Content = "Нижній кутовий";
-            //N15.label.Content = "Нижній 15";
-            //N30.label.Content = "Нижній 30";
-            //N40.label.Content = "Нижній 40";
-            //N45.label.Content = "Нижній 45";
-            //N60.label.Content = "Нижній 60";
-            //NKargo.label.Content = "Cargo";
-            //NSushka.label.Content = "Сушка";
-            //NPlyta.label.Content = "Плита";
-            //NShuflada.label.Content = "Шуфляди";
-        }
-
-        private void SetLabelCol3()
-        {
-            //FpDot.label.Content = "Завіс Дотяг";
-            //FpLift.label.Content = "Ліфт";
-            //FpR2.label.Content = "Ручка 2";
-        }
 
         public static int ChekInt(string s)
         {
@@ -142,8 +134,8 @@ namespace MbLuxSambir
 
         private double FurniturePlus()
         {
-            //double furPrice = fp.Dotjag(FpDot.Count) + fp.Lift(FpLift.Count) + fp.R2(FpR2.Count);
-            return 0;
+
+            return (double)fp.Price;
         }
 
         private void btnCalculate_Click(object sender, RoutedEventArgs e)
