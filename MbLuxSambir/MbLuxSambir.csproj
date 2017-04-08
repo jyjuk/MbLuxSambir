@@ -69,6 +69,7 @@
     <Compile Include="Models\TumbochkaNyz.cs" />
     <Compile Include="Models\TumbochkaVerh.cs" />
     <Compile Include="Tumba.cs" />
+    <Compile Include="ViewModels\ConfiguratorViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Page Include="Configurator.xaml">
       <SubType>Designer</SubType>

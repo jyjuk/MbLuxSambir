@@ -8,55 +8,20 @@
         Title="Configurator" Height="600" Width="800" ResizeMode="NoResize" Closed="Window_Closed">
     <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="60"/>
+           
         </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="0.5*"/>
-            <ColumnDefinition Width="0.5*"/>
-        </Grid.ColumnDefinitions>
-        <local:ConfiguratorUC x:Name="PricePluta" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Column="0" Grid.Row="0"/>
-        <local:ConfiguratorUC x:Name="PriceDvp" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="0"/>
-        
-        <local:ConfiguratorUC x:Name="PriceNogaKuhona" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Column="0" Grid.Row="1"/>
-        <local:ConfiguratorUC x:Name="PriceShurup" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="1"/>
-        
-        <local:ConfiguratorUC x:Name="PriceKonfirmat" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Column="0" Grid.Row="2"/>
-        <local:ConfiguratorUC x:Name="PricePolkotrymach" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="2"/>
 
-        <local:ConfiguratorUC x:Name="PriceStyazka" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Column="0" Grid.Row="3"/>
-        <local:ConfiguratorUC x:Name="PriceFasad" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="3"/>
+        <ListView DataContext="{Binding .}" ItemsSource="{Binding Path=SetPrice}" Grid.Row="1">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <local:ConfiguratorUC></local:ConfiguratorUC>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
 
-        <local:ConfiguratorUC x:Name="PriceRuchka1" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Column="0" Grid.Row="4"/>
-        <local:ConfiguratorUC x:Name="PriceRuchka2" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="4"/>
-
-        <local:ConfiguratorUC x:Name="PriceZavis" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Column="0" Grid.Row="5"/>
-        <local:ConfiguratorUC x:Name="PriceZavisDot" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="5"/>
-
-        <local:ConfiguratorUC x:Name="PriceNaprav" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Column="0" Grid.Row="6"/>
-        <local:ConfiguratorUC x:Name="PriceStolesh" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="6"/>
-
-        <local:ConfiguratorUC x:Name="PricePcv" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Column="0" Grid.Row="7"/>
-        <local:ConfiguratorUC x:Name="PriceKlejPcv" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="7"/>
-
-        <local:ConfiguratorUC x:Name="PriceCargo" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Column="0" Grid.Row="8"/>
-        <local:ConfiguratorUC x:Name="PriceKarniz" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="8"/>
-
-        <local:ConfiguratorUC x:Name="PriceLift" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Column="0" Grid.Row="9"/>
-        <local:ConfiguratorUC x:Name="PriceSushka" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="9"/>
-
-        <local:ConfiguratorUC x:Name="PriceVuha" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Column="0" Grid.Row="10"/>
-
-        <Button Name="btnSave" Content="Save()" Grid.Column="1" Grid.Row="11" Click="btnSave_Click" Height="30" Width="90" />
+        <Button Name="btnSave" Content="Save()"  Grid.Row="2" Click="btnSave_Click" Height="30" Width="90" />
     </Grid>
 </Window>

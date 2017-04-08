@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="50" d:DesignWidth="220">
     <Grid Margin="10,2">
-        <Label x:Name="label"  Width="180" HorizontalAlignment="Left" VerticalAlignment="Center" Height="26"/>
-        <TextBox x:Name="textbox" HorizontalAlignment="Right" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="25" Width="45" />
+        <Label x:Name="label" Content="{Binding Path=Name}"  Width="180" HorizontalAlignment="Left" VerticalAlignment="Center" Height="26"/>
+        <TextBox x:Name="textbox" Text="{Binding Path=Price,Mode=OneWay}" HorizontalAlignment="Right" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="25" Width="45" />
     </Grid>
 </UserControl>

@@ -1,17 +1,21 @@
 ﻿using System.Collections.Generic;
+using MbLuxSambir.Models;
 
 namespace MbLuxSambir.BusinessLogic
 {
     public class PriceInfo
     {
+       
         public decimal GetPrice(string componentName)
         {
+
             return 9;
         }
+       
 
-        public Dictionary<string, decimal> GetAll()
-        {
-            var dictionary = new Dictionary<string, decimal>()
+    public Dictionary<string, decimal> GetAll()
+    {
+        var dictionary = new Dictionary<string, decimal>()
             {
                 {"Плита", 150 },
                 {"DVP ",200 },
@@ -35,8 +39,8 @@ namespace MbLuxSambir.BusinessLogic
                 {"Сушка",70 },
                 {"Петлі монтажні",0.5m }
             };
-            return dictionary;
-        }
+        return dictionary;
     }
+}
 }
 
