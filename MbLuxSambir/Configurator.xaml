@@ -14,7 +14,7 @@
            
         </Grid.RowDefinitions>
 
-        <ListView DataContext="{Binding .}" ItemsSource="{Binding Path=SetPrice}" Grid.Row="1">
+        <ListView DataContext="{Binding .}" ItemsSource="{Binding Path=Component}" Grid.Row="1">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <local:ConfiguratorUC></local:ConfiguratorUC>
