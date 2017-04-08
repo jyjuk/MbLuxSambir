@@ -29,7 +29,7 @@ namespace MbLuxSambir
             //SetLabel();
             //LoadPrice();
             var configurationModel = new ConfiguratorViewModel();
-            configurationModel.Pricess.Add(new Component(340,"Плита"));
+            //configurationModel.Pricess.Add(new Component(340,"Плита"));
             //configurationModel.Pricess.Add(new Component("Плита", 340));
             //configurationModel.Pricess.Add(new Component("DVP",170));
             //configurationModel.Pricess.Add(new Component("Нога кухонна",5));
