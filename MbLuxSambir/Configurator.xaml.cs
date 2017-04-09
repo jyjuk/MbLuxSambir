@@ -28,29 +28,38 @@ namespace MbLuxSambir
             InitializeComponent();
             //SetLabel();
             //LoadPrice();
+
+            //var mainViewModel = new MainViewModel();
+
+            //mainViewModel.TumbochkaNyzes = new ObservableCollection<TumbochkaNyz>();
+            //mainViewModel.TumbochkaNyzes.Add(new TumbochkaNyz("Кутова"));
+
+
+
             var configurationModel = new ConfiguratorViewModel();
-            //configurationModel.Pricess.Add(new Component(340,"Плита"));
-            //configurationModel.Pricess.Add(new Component("Плита", 340));
-            //configurationModel.Pricess.Add(new Component("DVP",170));
-            //configurationModel.Pricess.Add(new Component("Нога кухонна",5));
-            //configurationModel.Pricess.Add(new Component("Шурупи",1));
-            //configurationModel.Pricess.Add(new Component("Конфірмат",3));
-            //configurationModel.Pricess.Add(new Component("Полко тримач",1));
-            //configurationModel.Pricess.Add(new Component("Стяжка міжсекційна",2));
-            //configurationModel.Pricess.Add(new Component("Фасад",550));
-            //configurationModel.Pricess.Add(new Component("Ручка",24));
-            //configurationModel.Pricess.Add(new Component("Ручка2",40));
-            //configurationModel.Pricess.Add(new Component("Завіс",5));
-            //configurationModel.Pricess.Add(new Component("Завіс дотяг",47));
-            //configurationModel.Pricess.Add(new Component("Направляюча",54));
-            //configurationModel.Pricess.Add(new Component("Стільниця",146));
-            //configurationModel.Pricess.Add(new Component("PCV",8));
-            //configurationModel.Pricess.Add(new Component("Клей PCV",3));
-            //configurationModel.Pricess.Add(new Component("Cargo",86));
-            //configurationModel.Pricess.Add(new Component("Карніз",34));
-            //configurationModel.Pricess.Add(new Component("Ліфт",20));
-            //configurationModel.Pricess.Add(new Component("Сушка",60));
-            //configurationModel.Pricess.Add(new Component("Петлі монтажні",4));
+            configurationModel.Pricess = new ObservableCollection<Component>();
+            configurationModel.Pricess.Add(new Component(340,"Плита"));
+            
+            configurationModel.Pricess.Add(new Component(170,"DVP"));
+            configurationModel.Pricess.Add(new Component(5,"Нога кухонна"));
+            configurationModel.Pricess.Add(new Component(1,"Шурупи"));
+            configurationModel.Pricess.Add(new Component(3,"Конфірмат"));
+            configurationModel.Pricess.Add(new Component(1,"Полко тримач"));
+            configurationModel.Pricess.Add(new Component(2,"Стяжка міжсекційна"));
+            configurationModel.Pricess.Add(new Component(550,"Фасад"));
+            configurationModel.Pricess.Add(new Component(24,"Ручка"));
+            configurationModel.Pricess.Add(new Component(40,"Ручка2"));
+            configurationModel.Pricess.Add(new Component(5,"Завіс"));
+            configurationModel.Pricess.Add(new Component(47,"Завіс дотяг"));
+            configurationModel.Pricess.Add(new Component(54,"Направляюча"));
+            configurationModel.Pricess.Add(new Component(146,"Стільниця"));
+            configurationModel.Pricess.Add(new Component(8,"PCV"));
+            configurationModel.Pricess.Add(new Component(3,"Клей PCV"));
+            configurationModel.Pricess.Add(new Component(86,"Cargo"));
+            configurationModel.Pricess.Add(new Component(34,"Карніз"));
+            configurationModel.Pricess.Add(new Component(20,"Ліфт"));
+            configurationModel.Pricess.Add(new Component(60,"Сушка"));
+            configurationModel.Pricess.Add(new Component(4,"Петлі монтажні"));
 
             DataContext = configurationModel;       
 
